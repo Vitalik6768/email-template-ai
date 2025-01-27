@@ -1,5 +1,7 @@
+"use client"
 import React from 'react'
 import { Button } from '@/components/ui/button'
+import SignInButton from './SignInButton'
 
 function Hero() {
     return (
@@ -14,7 +16,8 @@ function Hero() {
 
             <div className='flex gap-4 mt-8'>
                 <Button variant='outline'>Try Demo</Button>
-                <Button>Get Started</Button>
+                <SignInButton/>
+                {/* <Button>Get Started</Button> */}
 
             </div>
 
