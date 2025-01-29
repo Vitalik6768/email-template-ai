@@ -1,9 +1,13 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Code, Monitor, Smartphone } from 'lucide-react'
+import { useScreenSize } from '@/app/provider'
 
 function EditorHeader() {
+    const { screenSize, setScreenSize } = useScreenSize();
     return (
         <div className='p-4 shadow- flex justify-between items-center'>
             <Image src={'/logo.svg'} alt='logo' width={160} height={150} />
