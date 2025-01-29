@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 function Header() {
@@ -7,10 +8,11 @@ function Header() {
     <div className='flex justify-between items-center p-4 shadow-sm'>
         <Image src={'/logo.svg'} alt='logo' width={140} height={140}></Image>
         <div>
-            <Button>
-                Get Started 
-
-            </Button>
+            <Link href="/dashboard">
+                <Button>
+                    Dashboard
+                </Button>
+            </Link>
         </div>
       
 
