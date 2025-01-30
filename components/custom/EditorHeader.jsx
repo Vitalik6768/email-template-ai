@@ -11,13 +11,18 @@ function EditorHeader() {
     return (
         <div className='p-4 shadow- flex justify-between items-center'>
             <Image src={'/logo.svg'} alt='logo' width={160} height={150} />
-            <div>
-                <Button variant={'ghost'}>
+            <div className='flex gap-3'>
+                <Button variant={'ghost'}
+                onClick={() => setScreenSize('desktop')}
+                 className={`${screenSize === 'desktop' && 'bg-purple-100 text-white'}`}>
                     <Monitor/>
                     Desktop
                 </Button>
 
-                <Button variant={'ghost'}>
+                <Button 
+                variant={'ghost'} 
+                onClick={() => setScreenSize('smartphone')}
+                className={`${screenSize === 'smartphone' && 'bg-purple-100 text-white'}`}>
                     <Smartphone/>
                     Smart Phone
                 </Button>

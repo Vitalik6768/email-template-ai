@@ -9,19 +9,19 @@ export const Layout = [
     },
     {
         label:'Column ',
-        type:'column-2',
+        type:'column',
         numberOfColumns:2,
         icon:Columns2
     },
     {
         label:'Column ',
-        type:'column-3',
+        type:'column',
         numberOfColumns:3,
         icon:Columns3
     },
     {
         label:'Column ',
-        type:'column-4',
+        type:'column',
         numberOfColumns:4,
         icon:Columns4
     },
